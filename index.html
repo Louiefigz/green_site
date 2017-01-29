@@ -1,0 +1,1902 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Emploi environnement et développement durable | Greenjob</title>
+		<base href="http://www.greenjob.fr/" />
+
+		<!-- meta -->
+		<meta name="description" content="" />
+		<meta name="author" content="www.herewecom.fr" />
+		<meta name="google-site-verification" content="TlG58B7gFVGTg7x8f8iTpVm8agS114_Dn3jnBoMxBHA" />
+
+		<!-- icon -->
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/base.css" type="text/css"  media="screen" />
+		<link rel="stylesheet" href="css/style1.css" type="text/css"  media="screen" />
+		<link rel="stylesheet" href="./fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+		<!-- js -->
+		<!--[if IE]><script src="js/html5-ie.js"></script><![endif]-->
+
+		<!-- cufon -->
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/Lobster_400.font.js" type="text/javascript"></script>
+		<!-- jquery -->
+		<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- flash -->
+		<script type="text/javascript" src="js/jquery.media.js"></script>
+		<!-- cycle -->
+		<script type="text/javascript" src="js/cycle.js"></script>
+		<!-- boutons customs -->
+		<script type="text/javascript" src="js/jquery.screwdefaultbuttons.min.js"></script>
+		<!-- animate shadow -->
+		<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
+		<!-- fancybox -->
+		<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js" charset="utf-8"></script>
+		<!-- scripts persos -->
+		<script src="js/fonctions.js" type="text/javascript"></script>
+		<script src="js/gj_recherche.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			<!--
+			// CUFON
+			// Cufon.replace('h3');
+			Cufon.replace('#pied h4');
+			Cufon.replace('.cufon');
+
+			$().ready(function(){
+				// cycle
+				$("#pied_partenaires ul").cycle({
+					speed:    500,
+					fx:    'fade',
+					pause:  1
+				});
+
+				// effets vignettes
+				$('.vignette').mouseenter(function(){
+					$(this).animate({paddingLeft :'30px'}, {queue:false, duration:200});
+				});
+				$('.vignette').mouseleave(function(){
+					$(this).animate({paddingLeft :'15px'}, {queue:false, duration:200});
+				});
+
+				// valeur "mots clés" du formulaire
+				$("input[name='rech_keyword']").focus(function(){
+					if($(this).val()=='ex. Ingénieur photovoltaïque') 		$(this).val('');
+				});
+				$("input[name='rech_keyword']").blur(function(){
+					// if($(this).val()=='') 		$(this).val('ex. Ingénieur photovoltaïque');
+				});
+
+				// boutons custom
+				$('input.custom:checkbox').screwDefaultButtons({
+					checked: 	"url(img/buttons/checkbox1-checked.png)",
+					unchecked:	"url(img/buttons/checkbox1.png)",
+					width:		25,
+					height:		26
+				});
+				$('input.custom:radio').screwDefaultButtons({
+					checked: 	"url(img/buttons/radio1-up.png)",
+					unchecked:	"url(img/buttons/radio1.png)",
+					width:		18,
+					height:		22
+				});
+				// flash
+				$('.pub300').media( { width: 300, height: 250, autoplay: true } );
+
+				// envoi des alertes mail (conditino dans le fichier)
+				$.ajax({
+					url: "scripts/alertes.php?ac=1485652707",
+					// processData: false,
+					// data: xmlDocument,
+					success:  function(msg){
+						// alert( "page chargée : " + msg );
+					},
+					error :  function(msg){
+						// alert( "page error : " + msg );
+					}
+				});
+			});
+			-->
+		</script>
+	</head>
+	<body>
+				<div id="header">
+			<h1><a href="offres-d-emploi.html" title=""><img src="img/logo.png" alt="" title="" /></a></h1>
+			Le portail emploi dédié à l’environnement		</div>
+		<div class="contenu">
+			<!--<h2 style="display:none">Offres d'emploi environnement et développement durable</h2>-->
+
+
+<form action="offres-d-emploi.html" id="recherche">
+	<input type="hidden" name="operation" value="recherche" />
+
+	<div class="jalon ombre">
+		<i>FAQ :</i><br />
+		<input type="text" name="rech_keyword" value="" class="type1" placeholder="Ex. Ingénieur photovoltaïque" />
+	</div>
+	<div class="jalon ombre">
+		<i>Search Menu:</i><br style="clear:both" />
+		<!--<input type="text" name="rech_secteur" id="rech_secteur" value="" class="type1" />-->
+		<!--<img src="img/base/ghost.gif" alt="" title="" />-->
+
+		<div id="secteursCont">
+			<ul id="secteurs" class="">
+				<li class="secteur parent">
+					<label for="toutSecteurs" class="labelSecteur " style="padding:15px 5px;">
+						<input id="toutSecteurs" type="checkbox" class="parent" name="tousSecteurs"  />
+						Tout sélect./déselectionner
+					</label>
+				</li>
+
+					<li class="secteur parent choix">
+						<label for="secteur1" class="labelSecteur ">
+							<input id="secteur1" type="checkbox" class="parent" name="secteurs[]" value="1"  />
+							Agriculture
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur16" class="">
+										<input id="secteur16" type="checkbox" class="enfant" name="secteurs[]" value="16"  />
+										Agriculture Biologique Durable
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur17" class="">
+										<input id="secteur17" type="checkbox" class="enfant" name="secteurs[]" value="17"  />
+										Commerce equitable
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur18" class="">
+										<input id="secteur18" type="checkbox" class="enfant" name="secteurs[]" value="18"  />
+										Irrigation hydrologie agricole
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur19" class="">
+										<input id="secteur19" type="checkbox" class="enfant" name="secteurs[]" value="19"  />
+										Biocarburants
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur2" class="labelSecteur ">
+							<input id="secteur2" type="checkbox" class="parent" name="secteurs[]" value="2"  />
+							Air
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur20" class="">
+										<input id="secteur20" type="checkbox" class="enfant" name="secteurs[]" value="20"  />
+										Météorologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur21" class="">
+										<input id="secteur21" type="checkbox" class="enfant" name="secteurs[]" value="21"  />
+										Traitement de l'air & pollution
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur3" class="labelSecteur ">
+							<input id="secteur3" type="checkbox" class="parent" name="secteurs[]" value="3"  />
+							Cadre de Vie
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur22" class="">
+										<input id="secteur22" type="checkbox" class="enfant" name="secteurs[]" value="22"  />
+										Acoustique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur23" class="">
+										<input id="secteur23" type="checkbox" class="enfant" name="secteurs[]" value="23"  />
+										Urbanisme
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur24" class="">
+										<input id="secteur24" type="checkbox" class="enfant" name="secteurs[]" value="24"  />
+										Paysagisme
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur25" class="">
+										<input id="secteur25" type="checkbox" class="enfant" name="secteurs[]" value="25"  />
+										Architecture d'interieur
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur26" class="">
+										<input id="secteur26" type="checkbox" class="enfant" name="secteurs[]" value="26"  />
+										Isolation
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur27" class="">
+										<input id="secteur27" type="checkbox" class="enfant" name="secteurs[]" value="27"  />
+										Mobilité
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur4" class="labelSecteur ">
+							<input id="secteur4" type="checkbox" class="parent" name="secteurs[]" value="4"  />
+							Construction
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur28" class="">
+										<input id="secteur28" type="checkbox" class="enfant" name="secteurs[]" value="28"  />
+										Construction bois
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur29" class="">
+										<input id="secteur29" type="checkbox" class="enfant" name="secteurs[]" value="29"  />
+										Génie civil
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur5" class="labelSecteur ">
+							<input id="secteur5" type="checkbox" class="parent" name="secteurs[]" value="5"  />
+							Déchets
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur30" class="">
+										<input id="secteur30" type="checkbox" class="enfant" name="secteurs[]" value="30"  />
+										Traitement des déchets
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur31" class="">
+										<input id="secteur31" type="checkbox" class="enfant" name="secteurs[]" value="31"  />
+										Recyclage, valorisation
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur6" class="labelSecteur ">
+							<input id="secteur6" type="checkbox" class="parent" name="secteurs[]" value="6"  />
+							Eau
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur32" class="">
+										<input id="secteur32" type="checkbox" class="enfant" name="secteurs[]" value="32"  />
+										Traitement qualité de l'eau
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur33" class="">
+										<input id="secteur33" type="checkbox" class="enfant" name="secteurs[]" value="33"  />
+										Réseaux distribution de l'eau
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur34" class="">
+										<input id="secteur34" type="checkbox" class="enfant" name="secteurs[]" value="34"  />
+										Irrigation hydrologie agricole
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur35" class="">
+										<input id="secteur35" type="checkbox" class="enfant" name="secteurs[]" value="35"  />
+										Hydraulique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur36" class="">
+										<input id="secteur36" type="checkbox" class="enfant" name="secteurs[]" value="36"  />
+										Hydrologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur37" class="">
+										<input id="secteur37" type="checkbox" class="enfant" name="secteurs[]" value="37"  />
+										Hydrogeologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur38" class="">
+										<input id="secteur38" type="checkbox" class="enfant" name="secteurs[]" value="38"  />
+										Oceanologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur39" class="">
+										<input id="secteur39" type="checkbox" class="enfant" name="secteurs[]" value="39"  />
+										Assainissement
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur7" class="labelSecteur ">
+							<input id="secteur7" type="checkbox" class="parent" name="secteurs[]" value="7"  />
+							Encadrement Administratif
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur40" class="">
+										<input id="secteur40" type="checkbox" class="enfant" name="secteurs[]" value="40"  />
+										Commerce
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur41" class="">
+										<input id="secteur41" type="checkbox" class="enfant" name="secteurs[]" value="41"  />
+										Communication
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur42" class="">
+										<input id="secteur42" type="checkbox" class="enfant" name="secteurs[]" value="42"  />
+										Informatique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur43" class="">
+										<input id="secteur43" type="checkbox" class="enfant" name="secteurs[]" value="43"  />
+										Droit en environnement
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur44" class="">
+										<input id="secteur44" type="checkbox" class="enfant" name="secteurs[]" value="44"  />
+										Développement durable
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur45" class="">
+										<input id="secteur45" type="checkbox" class="enfant" name="secteurs[]" value="45"  />
+										Qualité et normes
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur46" class="">
+										<input id="secteur46" type="checkbox" class="enfant" name="secteurs[]" value="46"  />
+										Comptabilité
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur47" class="">
+										<input id="secteur47" type="checkbox" class="enfant" name="secteurs[]" value="47"  />
+										Ressources humaines
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur48" class="">
+										<input id="secteur48" type="checkbox" class="enfant" name="secteurs[]" value="48"  />
+										Bureau d'études
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur49" class="">
+										<input id="secteur49" type="checkbox" class="enfant" name="secteurs[]" value="49"  />
+										Presse
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur50" class="">
+										<input id="secteur50" type="checkbox" class="enfant" name="secteurs[]" value="50"  />
+										Direction
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur8" class="labelSecteur ">
+							<input id="secteur8" type="checkbox" class="parent" name="secteurs[]" value="8"  />
+							Énergies renouvelables
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur51" class="">
+										<input id="secteur51" type="checkbox" class="enfant" name="secteurs[]" value="51"  />
+										Aérothermie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur52" class="">
+										<input id="secteur52" type="checkbox" class="enfant" name="secteurs[]" value="52"  />
+										Bois
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur53" class="">
+										<input id="secteur53" type="checkbox" class="enfant" name="secteurs[]" value="53"  />
+										Éolienne
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur54" class="">
+										<input id="secteur54" type="checkbox" class="enfant" name="secteurs[]" value="54"  />
+										Géothermie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur55" class="">
+										<input id="secteur55" type="checkbox" class="enfant" name="secteurs[]" value="55"  />
+										Hydraulique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur56" class="">
+										<input id="secteur56" type="checkbox" class="enfant" name="secteurs[]" value="56"  />
+										Énergies solaires
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur57" class="">
+										<input id="secteur57" type="checkbox" class="enfant" name="secteurs[]" value="57"  />
+										Biomasse
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur58" class="">
+										<input id="secteur58" type="checkbox" class="enfant" name="secteurs[]" value="58"  />
+										Biogaz
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur59" class="">
+										<input id="secteur59" type="checkbox" class="enfant" name="secteurs[]" value="59"  />
+										Méthanisation
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur9" class="labelSecteur ">
+							<input id="secteur9" type="checkbox" class="parent" name="secteurs[]" value="9"  />
+							Formation Sensibilisation
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur60" class="">
+										<input id="secteur60" type="checkbox" class="enfant" name="secteurs[]" value="60"  />
+										Sécurité en entreprise
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur61" class="">
+										<input id="secteur61" type="checkbox" class="enfant" name="secteurs[]" value="61"  />
+										Prévention
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur10" class="labelSecteur ">
+							<input id="secteur10" type="checkbox" class="parent" name="secteurs[]" value="10"  />
+							Hygiène & Propreté de l'environnement
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur62" class="">
+										<input id="secteur62" type="checkbox" class="enfant" name="secteurs[]" value="62"  />
+										HSE (hygiene sécurité environnement)
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur63" class="">
+										<input id="secteur63" type="checkbox" class="enfant" name="secteurs[]" value="63"  />
+										QSE (qualité sécurité environnement)
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur64" class="">
+										<input id="secteur64" type="checkbox" class="enfant" name="secteurs[]" value="64"  />
+										Décontamination des sols
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur65" class="">
+										<input id="secteur65" type="checkbox" class="enfant" name="secteurs[]" value="65"  />
+										Traitement des déchets
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur66" class="">
+										<input id="secteur66" type="checkbox" class="enfant" name="secteurs[]" value="66"  />
+										Traitement de l'air & pollution
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur11" class="labelSecteur ">
+							<input id="secteur11" type="checkbox" class="parent" name="secteurs[]" value="11"  />
+							Milieu animal
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur67" class="">
+										<input id="secteur67" type="checkbox" class="enfant" name="secteurs[]" value="67"  />
+										Zoologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur68" class="">
+										<input id="secteur68" type="checkbox" class="enfant" name="secteurs[]" value="68"  />
+										Médecine vétérinaire
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur69" class="">
+										<input id="secteur69" type="checkbox" class="enfant" name="secteurs[]" value="69"  />
+										Surveillance du milieu aquatique
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur12" class="labelSecteur ">
+							<input id="secteur12" type="checkbox" class="parent" name="secteurs[]" value="12"  />
+							Milieu industriel
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur70" class="">
+										<input id="secteur70" type="checkbox" class="enfant" name="secteurs[]" value="70"  />
+										Agronomie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur71" class="">
+										<input id="secteur71" type="checkbox" class="enfant" name="secteurs[]" value="71"  />
+										Biochimie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur72" class="">
+										<input id="secteur72" type="checkbox" class="enfant" name="secteurs[]" value="72"  />
+										Biologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur73" class="">
+										<input id="secteur73" type="checkbox" class="enfant" name="secteurs[]" value="73"  />
+										Biophysique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur74" class="">
+										<input id="secteur74" type="checkbox" class="enfant" name="secteurs[]" value="74"  />
+										Bureau d'études
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur75" class="">
+										<input id="secteur75" type="checkbox" class="enfant" name="secteurs[]" value="75"  />
+										Électricite
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur76" class="">
+										<input id="secteur76" type="checkbox" class="enfant" name="secteurs[]" value="76"  />
+										Electronique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur77" class="">
+										<input id="secteur77" type="checkbox" class="enfant" name="secteurs[]" value="77"  />
+										Froid & climatisation
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur78" class="">
+										<input id="secteur78" type="checkbox" class="enfant" name="secteurs[]" value="78"  />
+										Mécanique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur79" class="">
+										<input id="secteur79" type="checkbox" class="enfant" name="secteurs[]" value="79"  />
+										Metrologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur80" class="">
+										<input id="secteur80" type="checkbox" class="enfant" name="secteurs[]" value="80"  />
+										Pharmacie
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur13" class="labelSecteur ">
+							<input id="secteur13" type="checkbox" class="parent" name="secteurs[]" value="13"  />
+							Milieu naturel
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur81" class="">
+										<input id="secteur81" type="checkbox" class="enfant" name="secteurs[]" value="81"  />
+										Océanologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur82" class="">
+										<input id="secteur82" type="checkbox" class="enfant" name="secteurs[]" value="82"  />
+										Botanique
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur83" class="">
+										<input id="secteur83" type="checkbox" class="enfant" name="secteurs[]" value="83"  />
+										Climatologue
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur84" class="">
+										<input id="secteur84" type="checkbox" class="enfant" name="secteurs[]" value="84"  />
+										Eaux et forêts
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur85" class="">
+										<input id="secteur85" type="checkbox" class="enfant" name="secteurs[]" value="85"  />
+										Gestion du littoral
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur86" class="">
+										<input id="secteur86" type="checkbox" class="enfant" name="secteurs[]" value="86"  />
+										Écologie
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur14" class="labelSecteur ">
+							<input id="secteur14" type="checkbox" class="parent" name="secteurs[]" value="14"  />
+							Risques Securite
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur87" class="">
+										<input id="secteur87" type="checkbox" class="enfant" name="secteurs[]" value="87"  />
+										Sécurité en entreprise
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur88" class="">
+										<input id="secteur88" type="checkbox" class="enfant" name="secteurs[]" value="88"  />
+										Radioprotection
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur89" class="">
+										<input id="secteur89" type="checkbox" class="enfant" name="secteurs[]" value="89"  />
+										HSE (hygiène sécurité environnement)
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur90" class="">
+										<input id="secteur90" type="checkbox" class="enfant" name="secteurs[]" value="90"  />
+										QSE (qualité sécurité environnement)
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur91" class="">
+										<input id="secteur91" type="checkbox" class="enfant" name="secteurs[]" value="91"  />
+										Risque sanitaire
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur92" class="">
+										<input id="secteur92" type="checkbox" class="enfant" name="secteurs[]" value="92"  />
+										Risque technologique
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur15" class="labelSecteur ">
+							<input id="secteur15" type="checkbox" class="parent" name="secteurs[]" value="15"  />
+							Sols
+						</label><ul class="seclist">
+								<li class="secteur enfant">
+									<label for="secteur93" class="">
+										<input id="secteur93" type="checkbox" class="enfant" name="secteurs[]" value="93"  />
+										Topographie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur94" class="">
+										<input id="secteur94" type="checkbox" class="enfant" name="secteurs[]" value="94"  />
+										Géologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur95" class="">
+										<input id="secteur95" type="checkbox" class="enfant" name="secteurs[]" value="95"  />
+										Sismologie
+									</label>
+								</li>
+								<li class="secteur enfant">
+									<label for="secteur96" class="">
+										<input id="secteur96" type="checkbox" class="enfant" name="secteurs[]" value="96"  />
+										Décontamination des sols
+									</label>
+								</li></ul>
+					</li>
+					<li class="secteur parent choix">
+						<label for="secteur97" class="labelSecteur ">
+							<input id="secteur97" type="checkbox" class="parent" name="secteurs[]" value="97"  />
+							Restauration
+						</label>
+					</li>			</ul>
+		</div>
+
+	</div>
+	<div class="jalon ombre">
+		<i>Région, département :</i>
+		<br style="clear:both" />
+		<div class="deco-form1"><img src="img/deco-form1.png" alt="" title="" /></div>
+		<!--
+		<input type="text" name="rech_lieux" value="" class="type1" /><br />
+		-->
+		<div id="lieuxCont">
+			<ul id="lieux" class="">
+				<li class="special">
+					<label for="etranger" class="">
+						<input id="etranger" type="checkbox" name="etranger"  />
+						À l'étranger
+					</label>
+				</li>
+				<li class="special">
+					<label for="ttelafrance" class="">
+						<input id="ttelafrance" type="checkbox" name="ttelafrance"  />
+						Dans toute la France
+					</label>
+				</li>
+
+					<li class="region" >
+						<label for="region1" class="labelRegion ">
+							<input id="region1" type="checkbox" name="regions[]" value="1"  />
+							Alsace
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept1" class="">
+										<input id="dept1" type="checkbox" name="depts[]" value="1"  />
+										Bas-Rhin
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept2" class="">
+										<input id="dept2" type="checkbox" name="depts[]" value="2"  />
+										Haut-Rhin
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region2" class="labelRegion ">
+							<input id="region2" type="checkbox" name="regions[]" value="2"  />
+							Aquitaine
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept3" class="">
+										<input id="dept3" type="checkbox" name="depts[]" value="3"  />
+										Dordogne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept4" class="">
+										<input id="dept4" type="checkbox" name="depts[]" value="4"  />
+										Gironde
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept5" class="">
+										<input id="dept5" type="checkbox" name="depts[]" value="5"  />
+										Landes
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept6" class="">
+										<input id="dept6" type="checkbox" name="depts[]" value="6"  />
+										Lot-et-Garonne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept7" class="">
+										<input id="dept7" type="checkbox" name="depts[]" value="7"  />
+										Pyrénées-Atlantiques
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region3" class="labelRegion ">
+							<input id="region3" type="checkbox" name="regions[]" value="3"  />
+							Auvergne
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept8" class="">
+										<input id="dept8" type="checkbox" name="depts[]" value="8"  />
+										Allier
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept9" class="">
+										<input id="dept9" type="checkbox" name="depts[]" value="9"  />
+										Cantal
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept10" class="">
+										<input id="dept10" type="checkbox" name="depts[]" value="10"  />
+										Haute-Loire
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept11" class="">
+										<input id="dept11" type="checkbox" name="depts[]" value="11"  />
+										Puy-de-Dôme
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region4" class="labelRegion ">
+							<input id="region4" type="checkbox" name="regions[]" value="4"  />
+							Basse-Normandie
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept12" class="">
+										<input id="dept12" type="checkbox" name="depts[]" value="12"  />
+										Calvados
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept13" class="">
+										<input id="dept13" type="checkbox" name="depts[]" value="13"  />
+										Manche
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept14" class="">
+										<input id="dept14" type="checkbox" name="depts[]" value="14"  />
+										Orne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region5" class="labelRegion ">
+							<input id="region5" type="checkbox" name="regions[]" value="5"  />
+							Bourgogne
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept15" class="">
+										<input id="dept15" type="checkbox" name="depts[]" value="15"  />
+										Côte-d'Or
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept16" class="">
+										<input id="dept16" type="checkbox" name="depts[]" value="16"  />
+										Nièvre
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept17" class="">
+										<input id="dept17" type="checkbox" name="depts[]" value="17"  />
+										Saône-et-Loire
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept18" class="">
+										<input id="dept18" type="checkbox" name="depts[]" value="18"  />
+										Yonne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region6" class="labelRegion ">
+							<input id="region6" type="checkbox" name="regions[]" value="6"  />
+							Bretagne
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept19" class="">
+										<input id="dept19" type="checkbox" name="depts[]" value="19"  />
+										Côtes-d'Armor
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept20" class="">
+										<input id="dept20" type="checkbox" name="depts[]" value="20"  />
+										Finistère
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept21" class="">
+										<input id="dept21" type="checkbox" name="depts[]" value="21"  />
+										Ille-et-Vilaine
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept22" class="">
+										<input id="dept22" type="checkbox" name="depts[]" value="22"  />
+										Morbihan
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region7" class="labelRegion ">
+							<input id="region7" type="checkbox" name="regions[]" value="7"  />
+							Centre
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept23" class="">
+										<input id="dept23" type="checkbox" name="depts[]" value="23"  />
+										Cher
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept24" class="">
+										<input id="dept24" type="checkbox" name="depts[]" value="24"  />
+										Eure-et-Loir
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept25" class="">
+										<input id="dept25" type="checkbox" name="depts[]" value="25"  />
+										Indre
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept26" class="">
+										<input id="dept26" type="checkbox" name="depts[]" value="26"  />
+										Indre-et-Loire
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept27" class="">
+										<input id="dept27" type="checkbox" name="depts[]" value="27"  />
+										Loir-et-Cher
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept28" class="">
+										<input id="dept28" type="checkbox" name="depts[]" value="28"  />
+										Loiret
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region8" class="labelRegion ">
+							<input id="region8" type="checkbox" name="regions[]" value="8"  />
+							Champagne-Ardenne
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept29" class="">
+										<input id="dept29" type="checkbox" name="depts[]" value="29"  />
+										Ardennes
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept30" class="">
+										<input id="dept30" type="checkbox" name="depts[]" value="30"  />
+										Aube
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept31" class="">
+										<input id="dept31" type="checkbox" name="depts[]" value="31"  />
+										Marne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept32" class="">
+										<input id="dept32" type="checkbox" name="depts[]" value="32"  />
+										Haute-Marne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region9" class="labelRegion ">
+							<input id="region9" type="checkbox" name="regions[]" value="9"  />
+							Corse
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept33" class="">
+										<input id="dept33" type="checkbox" name="depts[]" value="33"  />
+										Corse-du-Sud
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept34" class="">
+										<input id="dept34" type="checkbox" name="depts[]" value="34"  />
+										Haute-Corse
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region23" class="labelRegion ">
+							<input id="region23" type="checkbox" name="regions[]" value="23"  />
+							DOMs
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept97" class="">
+										<input id="dept97" type="checkbox" name="depts[]" value="97"  />
+										Guadeloupe
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept98" class="">
+										<input id="dept98" type="checkbox" name="depts[]" value="98"  />
+										Martinique
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept99" class="">
+										<input id="dept99" type="checkbox" name="depts[]" value="99"  />
+										Guyane
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept100" class="">
+										<input id="dept100" type="checkbox" name="depts[]" value="100"  />
+										Réunion
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region10" class="labelRegion ">
+							<input id="region10" type="checkbox" name="regions[]" value="10"  />
+							Franche-Comté
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept35" class="">
+										<input id="dept35" type="checkbox" name="depts[]" value="35"  />
+										Doubs
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept36" class="">
+										<input id="dept36" type="checkbox" name="depts[]" value="36"  />
+										Jura
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept37" class="">
+										<input id="dept37" type="checkbox" name="depts[]" value="37"  />
+										Haute-Saône
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept38" class="">
+										<input id="dept38" type="checkbox" name="depts[]" value="38"  />
+										Territoire de Belfort
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region11" class="labelRegion ">
+							<input id="region11" type="checkbox" name="regions[]" value="11"  />
+							Haute-Normandie
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept39" class="">
+										<input id="dept39" type="checkbox" name="depts[]" value="39"  />
+										Eure
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept40" class="">
+										<input id="dept40" type="checkbox" name="depts[]" value="40"  />
+										Seine-Maritime
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region12" class="labelRegion ">
+							<input id="region12" type="checkbox" name="regions[]" value="12"  />
+							Île-de-France
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept41" class="">
+										<input id="dept41" type="checkbox" name="depts[]" value="41"  />
+										Paris
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept42" class="">
+										<input id="dept42" type="checkbox" name="depts[]" value="42"  />
+										Seine-et-Marne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept43" class="">
+										<input id="dept43" type="checkbox" name="depts[]" value="43"  />
+										Yvelines
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept44" class="">
+										<input id="dept44" type="checkbox" name="depts[]" value="44"  />
+										Essonne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept45" class="">
+										<input id="dept45" type="checkbox" name="depts[]" value="45"  />
+										Hauts-de-Seine
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept46" class="">
+										<input id="dept46" type="checkbox" name="depts[]" value="46"  />
+										Seine-Saint-Denis
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept47" class="">
+										<input id="dept47" type="checkbox" name="depts[]" value="47"  />
+										Val-de-Marne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept48" class="">
+										<input id="dept48" type="checkbox" name="depts[]" value="48"  />
+										Val-d'Oise
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region13" class="labelRegion ">
+							<input id="region13" type="checkbox" name="regions[]" value="13"  />
+							Languedoc-Roussillon
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept49" class="">
+										<input id="dept49" type="checkbox" name="depts[]" value="49"  />
+										Aude
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept50" class="">
+										<input id="dept50" type="checkbox" name="depts[]" value="50"  />
+										Gard
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept51" class="">
+										<input id="dept51" type="checkbox" name="depts[]" value="51"  />
+										Hérault
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept52" class="">
+										<input id="dept52" type="checkbox" name="depts[]" value="52"  />
+										Lozère
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept53" class="">
+										<input id="dept53" type="checkbox" name="depts[]" value="53"  />
+										Pyrénées-Orientales
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region14" class="labelRegion ">
+							<input id="region14" type="checkbox" name="regions[]" value="14"  />
+							Limousin
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept54" class="">
+										<input id="dept54" type="checkbox" name="depts[]" value="54"  />
+										Corrèze
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept55" class="">
+										<input id="dept55" type="checkbox" name="depts[]" value="55"  />
+										Creuse
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept56" class="">
+										<input id="dept56" type="checkbox" name="depts[]" value="56"  />
+										Haute-Vienne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region15" class="labelRegion ">
+							<input id="region15" type="checkbox" name="regions[]" value="15"  />
+							Lorraine
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept58" class="">
+										<input id="dept58" type="checkbox" name="depts[]" value="58"  />
+										Meuse
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept59" class="">
+										<input id="dept59" type="checkbox" name="depts[]" value="59"  />
+										Moselle
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept57" class="">
+										<input id="dept57" type="checkbox" name="depts[]" value="57"  />
+										Meurthe-et-Moselle
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept60" class="">
+										<input id="dept60" type="checkbox" name="depts[]" value="60"  />
+										Vosges
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region16" class="labelRegion ">
+							<input id="region16" type="checkbox" name="regions[]" value="16"  />
+							Midi-Pyrénées
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept61" class="">
+										<input id="dept61" type="checkbox" name="depts[]" value="61"  />
+										Ariège
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept62" class="">
+										<input id="dept62" type="checkbox" name="depts[]" value="62"  />
+										Aveyron
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept63" class="">
+										<input id="dept63" type="checkbox" name="depts[]" value="63"  />
+										Haute-Garonne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept64" class="">
+										<input id="dept64" type="checkbox" name="depts[]" value="64"  />
+										Gers
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept65" class="">
+										<input id="dept65" type="checkbox" name="depts[]" value="65"  />
+										Lot
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept66" class="">
+										<input id="dept66" type="checkbox" name="depts[]" value="66"  />
+										Hautes-Pyrénées
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept67" class="">
+										<input id="dept67" type="checkbox" name="depts[]" value="67"  />
+										Tarn
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept68" class="">
+										<input id="dept68" type="checkbox" name="depts[]" value="68"  />
+										Tarn-et-Garonne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region17" class="labelRegion ">
+							<input id="region17" type="checkbox" name="regions[]" value="17"  />
+							Nord-Pas-de-Calais
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept69" class="">
+										<input id="dept69" type="checkbox" name="depts[]" value="69"  />
+										Nord
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept70" class="">
+										<input id="dept70" type="checkbox" name="depts[]" value="70"  />
+										Pas-de-Calais
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region18" class="labelRegion ">
+							<input id="region18" type="checkbox" name="regions[]" value="18"  />
+							Pays de la Loire
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept71" class="">
+										<input id="dept71" type="checkbox" name="depts[]" value="71"  />
+										Loire-Atlantique
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept72" class="">
+										<input id="dept72" type="checkbox" name="depts[]" value="72"  />
+										Maine-et-Loire
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept73" class="">
+										<input id="dept73" type="checkbox" name="depts[]" value="73"  />
+										Mayenne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept74" class="">
+										<input id="dept74" type="checkbox" name="depts[]" value="74"  />
+										Sarthe
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept75" class="">
+										<input id="dept75" type="checkbox" name="depts[]" value="75"  />
+										Vendée
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region19" class="labelRegion ">
+							<input id="region19" type="checkbox" name="regions[]" value="19"  />
+							Picardie
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept76" class="">
+										<input id="dept76" type="checkbox" name="depts[]" value="76"  />
+										Aisne
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept77" class="">
+										<input id="dept77" type="checkbox" name="depts[]" value="77"  />
+										Oise
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept78" class="">
+										<input id="dept78" type="checkbox" name="depts[]" value="78"  />
+										Somme
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region20" class="labelRegion ">
+							<input id="region20" type="checkbox" name="regions[]" value="20"  />
+							Poitou-Charentes
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept79" class="">
+										<input id="dept79" type="checkbox" name="depts[]" value="79"  />
+										Charente
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept80" class="">
+										<input id="dept80" type="checkbox" name="depts[]" value="80"  />
+										Charente-Maritime
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept81" class="">
+										<input id="dept81" type="checkbox" name="depts[]" value="81"  />
+										Deux-Sèvres
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept82" class="">
+										<input id="dept82" type="checkbox" name="depts[]" value="82"  />
+										Vienne
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region21" class="labelRegion ">
+							<input id="region21" type="checkbox" name="regions[]" value="21"  />
+							Provence-Alpes-Côte d'Azur
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept83" class="">
+										<input id="dept83" type="checkbox" name="depts[]" value="83"  />
+										Alpes-de-Haute-Provence
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept84" class="">
+										<input id="dept84" type="checkbox" name="depts[]" value="84"  />
+										Hautes-Alpes
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept85" class="">
+										<input id="dept85" type="checkbox" name="depts[]" value="85"  />
+										Alpes-Maritimes
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept86" class="">
+										<input id="dept86" type="checkbox" name="depts[]" value="86"  />
+										Bouches-du-Rhône
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept87" class="">
+										<input id="dept87" type="checkbox" name="depts[]" value="87"  />
+										Var
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept88" class="">
+										<input id="dept88" type="checkbox" name="depts[]" value="88"  />
+										Vaucluse
+									</label>
+								</li></ul>
+					</li>
+					<li class="region" >
+						<label for="region22" class="labelRegion ">
+							<input id="region22" type="checkbox" name="regions[]" value="22"  />
+							Rhône-Alpes
+						</label><ul class="deplist">
+								<li class="dept">
+									<label for="dept89" class="">
+										<input id="dept89" type="checkbox" name="depts[]" value="89"  />
+										Ain
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept90" class="">
+										<input id="dept90" type="checkbox" name="depts[]" value="90"  />
+										Ardèche
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept91" class="">
+										<input id="dept91" type="checkbox" name="depts[]" value="91"  />
+										Drôme
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept92" class="">
+										<input id="dept92" type="checkbox" name="depts[]" value="92"  />
+										Isère
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept93" class="">
+										<input id="dept93" type="checkbox" name="depts[]" value="93"  />
+										Loire
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept94" class="">
+										<input id="dept94" type="checkbox" name="depts[]" value="94"  />
+										Rhône
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept95" class="">
+										<input id="dept95" type="checkbox" name="depts[]" value="95"  />
+										Savoie
+									</label>
+								</li>
+								<li class="dept">
+									<label for="dept96" class="">
+										<input id="dept96" type="checkbox" name="depts[]" value="96"  />
+										Haute-Savoie
+									</label>
+								</li></ul>
+					</li>			</ul>
+		</div>
+
+		<div class="typesdemploi">
+			<input type="checkbox" class="custom" name="type_emploi" id="type_emploi" checked="checked" /><label for="type_emploi"> Emploi</label>
+			<input type="checkbox" class="custom" name="type_stage" id="type_stage" checked="checked" /><label for="type_stage"> Stage</label>
+		</div>
+	</div>
+	<div class="jalon" style="float:right; padding-top:20px;">
+		<input type="image" src="img/ok1.png" alt="OK" title="Lancer la recherche" class="upimage" />
+	</div>
+</form>
+
+
+
+<script type="text/javascript">
+	/* */
+	$().ready(function(){
+		$('.cycleOffresLiees').cycle({
+			timeout: 0,
+			speed:   300
+		});
+		$('.cycleOffresLieesNav span').click(function() {
+			i=$(this).index();
+			// maj cycle
+			$(this).parent().siblings('.cycleOffresLiees').cycle(i);
+			// maj etat boutons
+			$(this).siblings('span').removeClass('on').addClass('off');
+			$(this).removeClass('off').addClass('on');
+			return false;
+		});
+	});
+	/* */
+</script>
+
+
+
+
+
+<div id="liste_offres" class="gauche">
+	<h2 class="onglet">Dernières offres d'emploi environnement et développement durable :</h2>
+	<div class="encadre">
+
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/service-civique-environnement-3637.html" title="Offre d'emploi environnement : Service civique Environnement"><img src="ftp/offres/3637/logo.jpg" alt="Offre d'emploi environnement : Service civique Environnement" title="Offre d'emploi environnement : Service civique Environnement" style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">Sologne Nature Environnement</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/service-civique-environnement-3637.html" title="Voir l'offre d'emploi environnement de Sologne Nature Environnement">Service civique Environnement</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Loir-et-Cher, Romorantin-Lanthenay<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Stage&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 27/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/service-civique-environnement-3637.html" title="Voir l'offre d'emploi environnement de Sologne Nature Environnement"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de Sologne Nature Environnement" title="Voir l'offre d'emploi environnement de Sologne Nature Environnement" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/chargee-de-coordination-des-projets-de-production-3636.html" title="Offre d'emploi environnement : "><img src="ftp/offres/3636/logo.jpg" alt="Offre d'emploi environnement : " title="Offre d'emploi environnement : " style=";padding-top:17px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">Enercoop</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/chargee-de-coordination-des-projets-de-production-3636.html" title="Voir l'offre d'emploi environnement de Enercoop">Chargé.e de coordination des projets de production</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Paris<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Emploi&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 26/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/chargee-de-coordination-des-projets-de-production-3636.html" title="Voir l'offre d'emploi environnement de Enercoop"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de Enercoop" title="Voir l'offre d'emploi environnement de Enercoop" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/assistante-de-gestion-administrative-3635.html" title="Offre d'emploi environnement : Assistant(e) de gestion administrative"><img src="ftp/offres/3635/logo.jpg" alt="Offre d'emploi environnement : Assistant(e) de gestion administrative" title="Offre d'emploi environnement : Assistant(e) de gestion administrative" style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">La Tête Dans Les Olives</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/assistante-de-gestion-administrative-3635.html" title="Voir l'offre d'emploi environnement de ">Assistant(e) de gestion administrative</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Paris<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Stage&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 26/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/assistante-de-gestion-administrative-3635.html" title="Voir l'offre d'emploi environnement de "><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de " title="Voir l'offre d'emploi environnement de " class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/stage-charge-de-projets-anti-gaspillage-a-tours-3634.html" title="Offre d'emploi environnement : "><img src="ftp/offres/3634/logo.jpg" alt="Offre d'emploi environnement : " title="Offre d'emploi environnement : " style=";padding-top:16px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">PHENIX</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/stage-charge-de-projets-anti-gaspillage-a-tours-3634.html" title="Voir l'offre d'emploi environnement de PHENIX">Stage chargé de projets anti gaspillage à Tours</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Centre, Tours<br />
+			<b>Expérience souhaitée : </b> Bac+3,+4,+5<br />
+			<b>Contrat : </b> Stage&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 25/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/stage-charge-de-projets-anti-gaspillage-a-tours-3634.html" title="Voir l'offre d'emploi environnement de PHENIX"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de PHENIX" title="Voir l'offre d'emploi environnement de PHENIX" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/animateur-nature-reserve-ornithologique-terres-d-oiseaux-3633.html" title="Offre d'emploi environnement : "><img src="ftp/offres/3633/logo.jpg" alt="Offre d'emploi environnement : " title="Offre d'emploi environnement : " style=";padding-top:16px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">Terres d'Oiseaux</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/animateur-nature-reserve-ornithologique-terres-d-oiseaux-3633.html" title="Voir l'offre d'emploi environnement de Terres d'Oiseaux">Animateur nature réserve ornithologique Terres d'Oiseaux</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Gironde, BRAUD ET SAINT LOUIS<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Emploi&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 25/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/animateur-nature-reserve-ornithologique-terres-d-oiseaux-3633.html" title="Voir l'offre d'emploi environnement de Terres d'Oiseaux"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de Terres d'Oiseaux" title="Voir l'offre d'emploi environnement de Terres d'Oiseaux" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/stage-biodiversite-3631.html" title="Offre d'emploi environnement : "><img src="ftp/offres/3631/logo.jpg" alt="Offre d'emploi environnement : " title="Offre d'emploi environnement : " style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">ALISEA</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/stage-biodiversite-3631.html" title="Voir l'offre d'emploi environnement de ALISEA">Stage Biodiversité</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Île-de-France, Versailles<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Stage&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 24/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/stage-biodiversite-3631.html" title="Voir l'offre d'emploi environnement de ALISEA"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de ALISEA" title="Voir l'offre d'emploi environnement de ALISEA" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/conseillere-en-energie-partage-3630.html" title="Offre d'emploi environnement : "><img src="ftp/offres/3630/logo.jpg" alt="Offre d'emploi environnement : " title="Offre d'emploi environnement : " style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">ALEC du Pays Messin</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/conseillere-en-energie-partage-3630.html" title="Voir l'offre d'emploi environnement de ALEC du Pays Messin">Conseiller(e) en énergie partagé</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Moselle, METZ<br />
+			<b>Expérience souhaitée : </b> 1 an<br />
+			<b>Contrat : </b> Emploi&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 24/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/conseillere-en-energie-partage-3630.html" title="Voir l'offre d'emploi environnement de ALEC du Pays Messin"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de ALEC du Pays Messin" title="Voir l'offre d'emploi environnement de ALEC du Pays Messin" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/technicien-eau-potable-3629.html" title="Offre d'emploi environnement : Technicien eau potable"><img src="ftp/offres/3629/logo.jpg" alt="Offre d'emploi environnement : Technicien eau potable" title="Offre d'emploi environnement : Technicien eau potable" style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">SYNDICAT DES EAUX DE LA PRESQU'ILE DE GENNEVILLIER</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/technicien-eau-potable-3629.html" title="Voir l'offre d'emploi environnement de SYNDICAT DES EAUX DE LA PRESQU'ILE DE GENNEVILLIER">Technicien eau potable</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Hauts-de-Seine, Nanterre<br />
+			<b>Expérience souhaitée : </b> 3 ans minimum<br />
+			<b>Contrat : </b> Emploi&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 23/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/technicien-eau-potable-3629.html" title="Voir l'offre d'emploi environnement de SYNDICAT DES EAUX DE LA PRESQU'ILE DE GENNEVILLIER"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de SYNDICAT DES EAUX DE LA PRESQU'ILE DE GENNEVILLIER" title="Voir l'offre d'emploi environnement de SYNDICAT DES EAUX DE LA PRESQU'ILE DE GENNEVILLIER" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/rse-produits-3628.html" title="Offre d'emploi environnement : RSE Produits"><img src="ftp/offres/3628/logo.jpg" alt="Offre d'emploi environnement : RSE Produits" title="Offre d'emploi environnement : RSE Produits" style=";padding-top:5px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">Carrefour</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/rse-produits-3628.html" title="Voir l'offre d'emploi environnement de Carrefour">RSE Produits</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Île-de-France, Massy<br />
+			<b>Expérience souhaitée : </b> Bac +5<br />
+			<b>Contrat : </b> Stage&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 23/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/rse-produits-3628.html" title="Voir l'offre d'emploi environnement de Carrefour"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de Carrefour" title="Voir l'offre d'emploi environnement de Carrefour" class="upimage" /></a></div>
+</div>
+
+<div class="onglet_offre" style="border:none">
+	<div class="logo_onglet_offre">
+				<a href="voir-offre-d-emploi/un-e-technicien-ne-support-utilisateurs-hf-3627.html" title="Offre d'emploi environnement : Un-e Technicien-ne Support Utilisateurs (H/F)"><img src="ftp/offres/3627/logo.jpg" alt="Offre d'emploi environnement : Un-e Technicien-ne Support Utilisateurs (H/F)" title="Offre d'emploi environnement : Un-e Technicien-ne Support Utilisateurs (H/F)" style=";padding-top:23px" /></a>
+	</div>
+
+	<div class="infos_onglet_offre">
+		<div class="ets">GREENPEACE FRANCE</div>
+		<h3 class="cufon">
+			<a href="voir-offre-d-emploi/un-e-technicien-ne-support-utilisateurs-hf-3627.html" title="Voir l'offre d'emploi environnement de GREENPEACE FRANCE">Un-e Technicien-ne Support Utilisateurs (H/F)</a>
+		</h3>
+		<p>
+			<b>Localisation : </b> Paris<br />
+			<b>Expérience souhaitée : </b> Indifférent<br />
+			<b>Contrat : </b> Emploi&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Publiée le : </b> 20/01/17		</p>
+	</div>
+
+	<div class="arrow_clearer"><a href="voir-offre-d-emploi/un-e-technicien-ne-support-utilisateurs-hf-3627.html" title="Voir l'offre d'emploi environnement de GREENPEACE FRANCE"><img src="img/arrow1.png" alt="Voir l'offre d'emploi environnement de GREENPEACE FRANCE" title="Voir l'offre d'emploi environnement de GREENPEACE FRANCE" class="upimage" /></a></div>
+</div>
+		<span class="prev"><img src="img/arrow2-off.png" alt="" title="" />Page précédente</span><a href="offres-d-emploi.html?numPage=2" title="Plus d'offres d'emploi environnement et développement durable" class="next"><img src="img/arrow1.png" alt="Plus d'offres d'emploi environnement et développement durable" title="Plus d'offres d'emploi environnement et développement durable" />Page suivante</a><div class="numpages"> <a href="offres-d-emploi.html?numPage=1" title="Page 1" class="up">&nbsp;1&nbsp;</a>| <a href="offres-d-emploi.html?numPage=2" title="Page 2" class="">&nbsp;2&nbsp;</a>| <a href="offres-d-emploi.html?numPage=3" title="Page 3" class="">&nbsp;3&nbsp;</a>| <a href="offres-d-emploi.html?numPage=4" title="Page 4" class="">&nbsp;4&nbsp;</a>| <a href="offres-d-emploi.html?numPage=5" title="Page 5" class="">&nbsp;5&nbsp;</a>| <a href="offres-d-emploi.html?numPage=6" title="Page 6" class="">&nbsp;6&nbsp;</a>| <a href="offres-d-emploi.html?numPage=7" title="Page 7" class="">&nbsp;7&nbsp;</a>| <a href="offres-d-emploi.html?numPage=8" title="Page 8" class="">&nbsp;8&nbsp;</a>| <a href="offres-d-emploi.html?numPage=9" title="Page 9" class="">&nbsp;9&nbsp;</a>| <a href="offres-d-emploi.html?numPage=10" title="Page 10" class="">&nbsp;10&nbsp;</a>| <a href="offres-d-emploi.html?numPage=11" title="Page 11" class="">&nbsp;11&nbsp;</a>| <a href="offres-d-emploi.html?numPage=12" title="Page 12" class="">&nbsp;12&nbsp;</a>| <a href="offres-d-emploi.html?numPage=13" title="Page 13" class="">&nbsp;13&nbsp;</a></div>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+
+<div class="droite">
+
+	<!-- pub -->
+	<!--
+<div class="pub-300">
+	<a class="pub300" href="ftp/pub/pub300-250.swf" style="display:block; width:300px; height:250px;" title="">Javascript disabled! Click here for animation.</a>
+</div>
+-->
+<!--
+<div class="pub-300">
+			<object type="application/x-shockwave-flash" data="ftp/pub/pub300-250.swf" width="pub300" height="250">
+			<param name="movie" value="ftp/pub/pub300-250.swf" />
+			<param name="wmode" value="transparent" />
+			</object>
+</div>
+-->
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8141090057374642";
+/* GREENJOB-square */
+google_ad_slot = "0027723119";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>	<img src="img/shadow-dte.png" class="shadow-dte" alt="" title="" />
+
+
+		<!-- alerte mail -->
+		<div class="onglet-alerte-mail">
+	<img src="img/bigophone.png" alt="Alerte mail" title="Alerte mail" style="float:left" />
+	<div style="float:right; width:190px;">
+		<h4 class="cufon">Alerte mail</h4>
+		<div class="contenuEditable"><div id="elt-onglet-alertemail" class="vide"><p>Inscrivez-vous à <a title="Les offres d'emploi environnement directement dans votre boite mail" href="espace-candidat/alertes.html">l'alerte mail</a> pour recevoir une fois par semaine la liste des offres qui correspondent à vos <br />critères de recherche.</p></div></div>	</div>
+	<div class="arrow_clearer"><a href="espace-candidat/alertes.html" title=""><img src="img/arrow1.png" alt="" title="" class="upimage" /></a></div>
+</div>		<img src="img/shadow-dte.png" class="shadow-dte" alt="" title="" />
+
+
+
+	<!-- facebook -->
+	<div class="onglet-alerte-mail">
+	<a href="http://www.facebook.com/greenjob" title="Emploi environnement et développement durable Greenjob" target="blank"><img src="img/facebook.png" alt="" title="" style="float:left" /></a>
+	<div style="float:right; width:190px;">
+		<h4 class="cufon">Devenons amis</h4>
+		<div class="contenuEditable"><div id="elt-onglet-facebook" class="vide"><p>Rejoignez <a title="Suivez les emplois dans l'environnement sur Facebook" href="http://www.facebook.com/greenjob" target="_blank">notre réseau Facebook</a>, et restez informé de toutes les évolutions et mises <br />à jour du site Greenjob.fr</p></div></div>	</div>
+	<div class="arrow_clearer"><a href="http://www.facebook.com/greenjob" title="Emploi environnement et développement durable Greenjob" target="blank"><img src="img/arrow1.png" alt="" title="" class="upimage" /></a></div>
+</div>	<img src="img/shadow-dte.png" class="shadow-dte" alt="" title="" />
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- MENUS MEMBRES -->
+			<div class="vignettes">
+				<div style="float:right; width:28px; height:40px;"><img src="./img/shadow-vignettes.png" alt="" title="" style="position:absolute" /></div>
+				<!-- recruteurs -->
+									<div id="vignette_recruteur" class="vignette">
+						<img src="./img/titre-vignette-recruteurs.png" alt="Espace recruteurs" title="Espace recruteurs" /><br />
+						<a href="login-recruteur.php" class="fancyframe" title="Connexion à votre compte recruteur">Se connecter</a> |
+						<a href="creercompte-recruteur.php" class="fancyframe" title="Créer un compte recruteur">Créer un compte</a>
+					</div>
+									<!-- candidats -->
+									<div id="vignette_candidat" class="vignette">
+						<img src="./img/titre-vignette-candidats.png" alt="Espace candidats" title="Espace candidats" /><br />
+						<a href="login-candidat.php" class="fancyframe" title="Connexion à votre compte candidat">Se connecter</a> |
+						<a href="creercompte-candidat.php" class="fancyframe" title="Créer un compte candidat">Créer un compte</a>
+					</div>
+								</div>
+		</div>
+
+		<div id="pied">
+			<div id="seppied"></div>
+			<div class="contenu">
+				<!-- form contact -->
+				<form action="offres-d-emploi.html#pied" method="post" id="contact">
+					<input type="hidden" name="operation" value="contact" />
+
+					<div style="float:left">
+						<h4>Contacter l'équipe Greenjob :</h4>
+
+						Votre nom :<br />
+						<input type="text" class="type2" name="nom" value="" /><br />
+
+						Votre adresse e-mail :<br />
+						<input type="text" class="type2" name="email" value="" /><br />
+
+						Objet de votre demande :<br />
+						<input type="text" class="type2" name="objet" value="" /><br />
+
+		<input type="hidden" name="captcha_n" value="8" />
+		Antispam : Combien font trois fois trois ?<br />
+		<input type="text" name="captcha_r" style="color:#fff; border:none; background:#41291b; margin:3px 0px; font-weight:bold; width:35px; text-align:center;" />
+		 (en chiffres)
+							</div>
+
+					<div style="float:right">
+						<textarea class="type2" name="message" cols="" rows=""></textarea>
+					</div>
+					<br style="clear:both" />
+
+					<input type="image" src="img/ok1.png" alt="Envoyer" title="Envoyer" class="upimage" style="float:right; clear:right; padding-top:10px;" />
+				</form>
+
+				<!-- partenaires -->
+				<div id="pied_partenaires">
+					<h4>Partenaires :</h4>
+					<ul>
+						<li><a href="partenaires.html#11" title="Greenzer"><img style="padding-top:3px" src="ftp/partenaires/greenzer.jpg" alt="Greenzer" title="Greenzer" /></a></li>
+							<li><a href="partenaires.html#7" title="Marcel Green"><img style="padding-top:1px" src="ftp/partenaires/marcelgreen.jpg" alt="Marcel Green" title="Marcel Green" /></a></li>
+							<li><a href="partenaires.html#9" title="Le Coin Bio"><img style="padding-top:1px" src="ftp/partenaires/le-coin-bio.jpg" alt="Le Coin Bio" title="Le Coin Bio" /></a></li>
+												</ul>
+					<a href="partenaires.html" title="">&gt; Voir tous les partenaires</a>
+				</div>
+				<!-- infos1 -->
+				<div class="contenuEditable"><div id="elt-pied-infos1" class="piedinfos1"><h4><a title="Greenjob : portail emploi dans l'environnement" href="mentions-legales.html">Mentions légales</a></h4>
+<p>Cliquez ci-dessus pour les informations légales.</p></div></div>				<!-- infos2 -->
+				<div class="contenuEditable"><div id="elt-pied-infos2" class="piedinfos2"><p><span>
+</span></p>
+<h4><a title="Postez gratuitement vos annonces, offres d'emploi environnement" href="devenir-annonceur.html">
+Devenir annonceur / partenaire</a></h4>
+<p>Contactez-nous via le formulaire ci-contre pour bénéficier d'un espace publicitaire sur notre site...                            <a title="Devenir partenaire de Greenjob : emploi environnement et développement durable" href="devenir-annonceur.html">&gt; En savoir plus</a></p>
+<h4>
+<p> </p>
+</h4>
+<p> </p></div></div>				<br style="clear:both" />
+				<!-- foottext -->
+				<div class="contenuEditable"><div id="elt-pied-foottext" class="foottext"><p>Greenjob est le portail emploi spécialisé dans les métiers de l'environnement et le développement durable. Greenjob a été créé pour tous les recruteurs qui sont en recherche de collaborateurs et pour les candidats qui souhaitent trouver un emploi ou en changer. Greenjob est gratuit et permet de mettre directement en relation de façon simple et rapide les recruteurs et les candidats. Les métiers sont classés en grandes catégories : Agriculture, gestion de l'Eau, Encadrement / Administratif, Energies renouvelables, Formation / Sensibilisation, Hygiène / Propreté de l'environnement, Milieu industrie, Milieu naturel, Risques / Sécurité, gestion des Sols... Les recruteurs peuvent gratuitement se créer un compte, consulter la CV-thèque et déposer leurs offres d'emploi. Pour les candidats, création de compte, création de CV et Lettre de Motivation, inscription à l'alerte mail. <strong>Greenjob, le meilleur moyen de trouver un emploi dans l'environnement pour les candidats.</strong></p>
+<p style="text-align: right;">Site internet conçu et réalisé par l'agence <a title="Here We Com création de site internet" href="http://www.herewecom.fr/" target="_blank">HERE WE COM<br /></a></p></div></div>			</div>
+		</div>
+
+		<!-- Waiters -->
+		<div id="loading1" style="display:none;position:fixed; top:0px; left:0px; z-index:800; height:100%; width:100%; background:#c1c1c1;-moz-opacity:0.6;opacity: 0.6;filter:alpha(opacity=60);"></div>
+		<div id="loading2" class="mybox1" style="display:none;">
+			<p>Traitement en cours, merci de patienter...</p>
+			<img src="./img/base/loading.gif" alt="" title="" />
+		</div>
+		<!-- -->
+
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1418509-13']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+		'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+		<!-- Preload, Gstat, infos admin -->
+		<img src="./img/sup2-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/suivant-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/arrow2-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/payer-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/add-offre-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/fd-input1-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/arrow1-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/enregistrer-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/edit-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/rem-offre-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/print-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/sup-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/ok1-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/rechercher-up.png" alt="Preload" title="Preload" style="display:none" /><img src="./img/Copie de payer-up.png" alt="Preload" title="Preload" style="display:none" />	</body>
+	</html>
